@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Create Zone</h1>
+
+    <!-- The http method defines the action to be taken when accessing an endpoint.
+    The post call creates something. The put call updates a resource -->
+
+    <form action="/api/createzone" method="post">
+        <input type="text" name="name" placeholder="Name"/><br/>
+        <input type="text" name="zipCodes" placeholder="Zip Codes"/><br/>
+
+        <input type="submit" value="Create Zone"/>
+
+
+    </form>
+  </body>
+</html>
